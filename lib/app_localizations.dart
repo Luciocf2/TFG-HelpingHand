@@ -1,0 +1,121 @@
+class AppLocalizations {
+  final String locale;
+
+  AppLocalizations(this.locale);
+
+  static Map<String, Map<String, String>> localizedValues = {
+    'es': {
+      'title': 'Helping Hand',
+      'menu': 'Menú',
+      'profile': 'Perfil',
+      'settings': 'Configuración',
+      'help': 'Ayuda',
+      'darkMode': 'Modo oscuro',
+      'language': 'Idioma',
+      'greeting': 'Hola',
+      'geriatria': 'Geriatría',
+      'enfermeria': 'Enfermería',
+      'cardiologia': 'Cardiología',
+      'fisioterapia': 'Fisioterapia',
+      'others': 'Otros',
+      'emergency': 'Emergencia',
+      'name': 'Nombre',
+      'cardNumber': 'Nº Tarjeta',
+      'birthDate': 'Fecha de nacimiento',
+      'phone': 'Teléfono',
+      'address': 'Dirección',
+      'save': 'Guardar',
+      'send': 'Enviar',
+      'hour': 'Hora',
+      'emergencyTitle': 'Emergencias',
+      'emergencyQuestion': '¿Tienes una emergencia médica?',
+      'call112': 'Llamar al 112',
+      'noAppointments': 'No hay citas guardadas.',
+      'scheduledAppointments': 'Citas Agendadas',
+      'cancelled': '❌ Cita cancelada',
+      'reason': 'Motivo',
+      'faq': 'Preguntas frecuentes',
+      'howUse': '¿Cómo usar la app?',
+      'howUseDesc':
+          'Simplemente navega por las especialidades, selecciona una y pide tu cita.',
+      'howBook': '¿Cómo pedir una cita?',
+      'howBookDesc':
+          'Selecciona una especialidad, elige el día y la hora, escribe tu consulta y pulsa Enviar.',
+      'howCancel': '¿Puedo cancelar una cita?',
+      'howCancelDesc':
+          'Actualmente no se puede cancelar. Contáctanos si necesitas modificarla.',
+      'contactSupport': '¿Cómo contactar con soporte?',
+      'contactSupportDesc':
+          'Puedes escribirnos al correo soporte@helpinghand.com.',
+      "screenReader": "Lectura de pantalla (voz)",
+      "screenReaderDesc": "Activar lectura automática de texto",
+      "textSize": "Tamaño del texto",
+      'consultInstruction':
+          'Elige el día y la hora, escribe tu consulta y pulsa Enviar.',
+      'formHint': 'Escribe aquí tu consulta...',
+      'formSend': 'Enviar',
+      'resetPhoto': 'Eliminar foto y usar imagen predeterminada',
+      "requiredField": "Este campo es obligatorio",
+      "invalidPhone": "El teléfono debe tener 9 dígitos",
+      "invalidDate": "Formato de fecha inválido (dd/mm/yyyy)",
+    },
+    'en': {
+      'title': 'Helping Hand',
+      'menu': 'Menu',
+      'profile': 'Profile',
+      'settings': 'Settings',
+      'help': 'Help',
+      'darkMode': 'Dark Mode',
+      'language': 'Language',
+      'greeting': 'Hello',
+      'geriatria': 'Geriatrics',
+      'enfermeria': 'Nursing',
+      'cardiologia': 'Cardiology',
+      'fisioterapia': 'Physiotherapy',
+      'others': 'Other Services',
+      'emergency': 'Emergency',
+      'name': 'Name',
+      'cardNumber': 'Card Number',
+      'birthDate': 'Birth Date',
+      'phone': 'Phone',
+      'address': 'Address',
+      'save': 'Save',
+      'send': 'Send',
+      'hour': 'Hour',
+      'emergencyTitle': 'Emergency',
+      'emergencyQuestion': 'Are you having a medical emergency?',
+      'call112': 'Call 112',
+      'noAppointments': 'No saved appointments.',
+      'scheduledAppointments': 'Upcoming Appointments',
+      'cancelled': '❌ Appointment Cancelled',
+      'reason': 'Reason',
+      'faq': 'Frequently Asked Questions',
+      'howUse': 'How do I use the app?',
+      'howUseDesc':
+          'Just explore the specialties, select one and request your appointment.',
+      'howBook': 'How do I book an appointment?',
+      'howBookDesc':
+          'Choose a specialty, pick a date and time, write your concern and tap Send.',
+      'howCancel': 'Can I cancel an appointment?',
+      'howCancelDesc':
+          'Right now you cannot cancel it through the app. Contact us to reschedule or cancel.',
+      'contactSupport': 'How can I contact support?',
+      'contactSupportDesc': 'You can email us at soporte@helpinghand.com.',
+      'screenReader': 'Screen Reader (Voice)',
+      'screenReaderDesc': 'Enable automatic text-to-speech',
+      'textSize': 'Text Size',
+      'consultInstruction':
+          'Pick the date and time, write your query and press Send.',
+      'formHint': 'Type your concern here...',
+      'formSend': 'Send',
+      'resetPhoto': 'Remove photo and use default image',
+      "requiredField": "This field is required",
+      "invalidPhone": "Phone number must have 9 digits",
+      "invalidDate": "Invalid date format (dd/mm/yyyy)",
+    },
+  };
+
+  String get(String key) {
+    return localizedValues[locale]?[key] ?? key;
+  }
+}
